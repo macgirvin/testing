@@ -11,7 +11,7 @@ class TimeParseTest extends TestCase
     {
         $x = new TimeParse();
         $result = $x->to_date('The first Monday of October 2019');
-        $this->assertEquals($result,'2019-10-07');
+        $this->assertEquals('2019-10-07', $result);
     }
 
     /** @test */
@@ -19,7 +19,7 @@ class TimeParseTest extends TestCase
     {
         $x = new TimeParse();
         $result = $x->to_date('The third Tuesday of October 2019');
-        $this->assertEquals($result,'2019-10-15');
+        $this->assertEquals('2019-10-15', $result);
     }
 
     /** @test */
@@ -27,7 +27,7 @@ class TimeParseTest extends TestCase
     {
         $x = new TimeParse();
         $result = $x->to_date('The last Wednesday of October 2019');
-        $this->assertEquals($result,'2019-10-30');
+        $this->assertEquals('2019-10-30', $result);
     }
 
     /** @test */
