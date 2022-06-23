@@ -4,7 +4,7 @@ require_once('src/Test1/Repeater.php');
 use PHPUnit\Framework\TestCase;
 use src\Test1\Repeater;
 
-final class RepeatsTest extends TestCase
+class RepeatsTest extends TestCase
 {
     /** @test */
     public function wordsWithoutRepeats(): void
